@@ -1,4 +1,4 @@
-import logo from '../../../assets/logo.png';
+import logo from "/Clover's favicon.png";
 
 function Logo() {
   return (
