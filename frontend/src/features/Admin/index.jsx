@@ -84,13 +84,15 @@ function Admin() {
 
   const data = [];
 
-  users.forEach((user) => data.push({
-    id: user._id,
-    firstName: user.firstName,
-    lastName: user.lastName,
-    email: user.email,
-    username: user.username,
-  }));
+  users.forEach((user) =>
+    data.push({
+      id: user._id,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      email: user.email,
+      username: user.username,
+    }),
+  );
 
   return (
     <div className="admin content uk-flex uk-flex-column">
@@ -104,7 +106,7 @@ function Admin() {
         </div>
       </div>
       <div className="content uk-flex uk-flex-center uk-flex-middle uk-flex-column">
-        <div className="data-table" style={{ background: '#fff' }}>
+        <div className="data-table admin-surface">
           <div className="data-create">
             <button className="uk-margin-small uk-button uk-button-honey" onClick={() => setPopup('create')}>
               Create
@@ -112,6 +114,7 @@ function Admin() {
           </div>
           <DataTable
             title="Admin - Users"
+            className='data-table-admin-surface'
             columns={columns}
             data={data}
             defaultSortField="title"

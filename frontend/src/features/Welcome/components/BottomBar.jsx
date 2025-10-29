@@ -9,7 +9,7 @@ function BottomBar() {
     <div className="bottom-bar uk-flex uk-flex-between uk-flex-middle">
       <div className="profile" />
       <div className="nav">
-        <div className="button">
+        <div className="button-color">
           {Config.appName}
           {' '}
           v

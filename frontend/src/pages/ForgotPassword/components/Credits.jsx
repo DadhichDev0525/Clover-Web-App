@@ -23,7 +23,7 @@ function Copyright() {
       <span className="uk-text-small uk-text-muted">
         © 2020
         {Config.brand || 'Honeyside'}
-        {Config.showCredits && <Credits />}
+        {/* {Config.showCredits && <Credits />} */}
         {' '}
         - v
         {version}

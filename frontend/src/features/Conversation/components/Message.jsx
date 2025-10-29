@@ -6,6 +6,7 @@ import ReactImageAppear from 'react-image-appear';
 import { FiDownloadCloud } from 'react-icons/fi';
 import striptags from 'striptags';
 import Config from '../../../config';
+import Picture from '../../../components/Picture';
 
 function Message({
   message, previous, next, onOpen,
@@ -31,15 +32,15 @@ function Message({
   ) attachPrevious = true;
   if (next && Math.abs(moment(next.date).diff(moment(date), 'minutes')) < 3 && author._id === next.author._id) attachNext = true;
 
-  function Picture({ user }) {
-    if (user.picture) return <img src={`${Config.url || ''}/api/images/${user.picture.shieldedID}/256`} alt="Picture" />;
-    return (
-      <div className="img">
-        {user.firstName.substr(0, 1)}
-        {user.lastName.substr(0, 1)}
-      </div>
-    );
-  }
+  // function Picture({ user }) {
+  //   if (user.picture) return <img src={`${Config.url || ''}/api/images/${user.picture.shieldedID}/256`} alt="Picture" />;
+  //   return (
+  //     <div className="img">
+  //       {user.firstName.substr(0, 1)}
+  //       {user.lastName.substr(0, 1)}
+  //     </div>
+  //   );
+  // }
 
   function Details({ side }) {
     if (!attachNext) {

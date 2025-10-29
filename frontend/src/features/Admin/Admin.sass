@@ -2,6 +2,16 @@
   width: 100%
   height: 100%
   overflow-y: scroll
+  background: linear-gradient(180deg,rgb(158, 191, 241) 0%, #D1E3FF 100%)
+  &.admin-surface
+    background: linear-gradient(180deg,rgb(158, 191, 241) 0%, #D1E3FF 100%)
+  
+  .data-table-admin-surface
+    background: linear-gradient(180deg,rgb(158, 191, 241) 0%, #D1E3FF 100%)
+    .rdt_Table,
+    .rdt_TableHead,
+    .rdt_TableBody
+      background-color: transparent
   .data-create
     position: relative
     height: 0
@@ -17,7 +27,7 @@
   display: flex
   flex-direction: row
   .edit
-    color: #da7d02
+    color: #0047AB
     padding: 10px 0
   .separator
     padding: 10px 0
@@ -27,4 +37,4 @@
 
 .admin
   .search-bar
-    background: #f5f5f5
+    background: #EAF2FF

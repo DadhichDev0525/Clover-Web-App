@@ -157,17 +157,17 @@ function TopBar({ back, loading }) {
         )}
       </div>
       <div className="nav">
-        <div className="button" onClick={() => call(true)}>
+        <div className="button button-color" onClick={() => call(true)}>
           <FiVideo />
         </div>
-        <div className="button" onClick={() => call(false)}>
+        <div className="button button-color" onClick={() => call(false)}>
           <FiPhone />
         </div>
-        <div className={`button${isFavorite() ? ' active' : ''}`} onClick={favorite}>
+        <div className={`button${isFavorite() ? ' active' : ''} button-color`} onClick={favorite}>
           <FiStar />
         </div>
         <div className="uk-inline">
-          <div className="button" type="button">
+          <div className="button button-color" type="button">
             <FiMoreHorizontal />
           </div>
           <div data-uk-dropdown="mode: click; offset: 5; boundary: .top-bar; pos: bottom-right">

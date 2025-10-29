@@ -15,7 +15,7 @@ function TopBar({ back }) {
           <FiArrowLeft />
         </div>
       </div>
-      <div className="nav">
+      {/* <div className="nav">
         <div className="uk-inline">
           <div className="button" type="button">
             <FiMoreHorizontal />
@@ -35,7 +35,7 @@ function TopBar({ back }) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

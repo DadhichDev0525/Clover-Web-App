@@ -137,7 +137,7 @@ useEffect(() => {
       <div className="login uk-cover-container uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-overflow-hidden uk-light" style={loginStyle}>
         <div className="uk-position-cover uk-overlay-primary" />
         <div className="login-scrollable uk-flex uk-flex-center uk-flex-middle uk-position-z-index">
-          <Credits />
+          {/* <Credits /> */}
 
           <div className="login-inner uk-width-medium uk-padding-small" data-uk-scrollspy="cls: uk-animation-fade">
             <Logo />

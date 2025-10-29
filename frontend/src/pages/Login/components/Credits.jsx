@@ -28,7 +28,7 @@ function Copyright() {
         {moment().year()}
         {' '}
         {Config.brand || 'Honeyside'}
-        {Config.showCredits && <Credits />}
+        {/* {Config.showCredits && <Credits />} */}
         {' '}
         - v
         {version}

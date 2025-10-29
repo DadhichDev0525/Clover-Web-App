@@ -52,7 +52,7 @@ function Panel() {
       <TopBar />
       <SearchBar />
       <button
-        className="uk-margin-remove uk-button uk-button-large uk-button-primary create-button"
+        className="uk-margin-remove uk-button uk-button-large uk-button-primary uk-button uk-button-honey"
         onClick={createGroup}
       >
         Select Users
